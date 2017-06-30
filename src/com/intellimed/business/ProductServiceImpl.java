@@ -3,6 +3,8 @@ package com.intellimed.business;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.intellimed.model.Product;
+
 public class ProductServiceImpl {
 	private List<String> bookList = new ArrayList<>();
 	private List<String> musicList = new ArrayList<>();
@@ -57,5 +59,12 @@ public class ProductServiceImpl {
 			return false;
 		}	
 		return true;
+	}
+
+	public List<Product> getProductsv2(String category) {
+		List<Product> productList = new ArrayList<>();
+		productList.add(new Product ("Book #1", "1234", 84.99));
+		productList.add(new Product ("Book #2", "ABCD", 24.99));
+		return productList;
 	}
 }
