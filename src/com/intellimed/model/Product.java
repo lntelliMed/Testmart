@@ -11,6 +11,10 @@ public class Product {
 	private String sku;
 	private double price;
 	
+	public Product(){
+		
+	}
+	
 	public Product(String name, String sku, double price) {
 		super();
 		this.name = name;
