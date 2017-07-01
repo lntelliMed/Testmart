@@ -5,7 +5,7 @@ import javax.jws.WebService;
 import com.intellimed.business.ProductServiceImpl;
 import com.intellimed.model.Product;
 
-@WebService(endpointInterface = "com.intellimed.ProductCatalogInterface")
+@WebService(endpointInterface = "com.intellimed.ProductCatalogInterface", portName="TestMartCatalogPort", serviceName="TestMartCatalogService")
 public class ProductCatalog implements ProductCatalogInterface {
 	private ProductServiceImpl productServiceImpl = new ProductServiceImpl();
 	
